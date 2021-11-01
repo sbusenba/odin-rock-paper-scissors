@@ -4,16 +4,19 @@ function computerPlay(){
     switch (playNumber){
         case 1:
             play ="rock"
+           
         break;
         case 2:
             play ="paper"
+
         break;
         case 3:
+
             play = "scissors"
         break;
 
     }
-
+    document.querySelector(`.computerButton[data-compChoice="${play}"]`).classList.add('selected')
     return play;
 }
 function roundOfRPS(playerSelection, computerSelection){
@@ -54,17 +57,24 @@ function roundOfRPS(playerSelection, computerSelection){
         }
     }
 }
-function game(){
-let playerChoice=''
-while (playerChoice!='rock' && playerChoice!='paper' && playerChoice!='scissors'){
-playerChoice = prompt("Rock, Paper, or Scissors?").toLowerCase()
+function game(playerChoice){
+    console.log(playerChoice)
+    let computerChoice = computerPlay()
+    let outcome = roundOfRPS(playerChoice , computerChoice)
+    console.log(outcome)
+    alert(outcome)
+}
+function playerChose(e){
+    this.classList.add('selected')  
+    game(this.getAttribute('data-value'))
+    
+}
+function removeTransform(e){
+this.classList.remove('selected')
 
 }
-let computerChoice = computerPlay()
-let outcome = roundOfRPS(playerChoice , computerChoice)
-console.log(outcome)
-alert(outcome)
-}
-for (let i=0;i<5;i++){
-    game()
-}
+
+let playerButtons = document.querySelectorAll('.playerButton')
+let buttons = document.querySelectorAll('button')
+playerButtons.forEach(button => button.addEventListener('click',playerChose))
+buttons.forEach(button => button.addEventListener('transitionend',removeTransform))

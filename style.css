@@ -1,0 +1,27 @@
+.choices{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    justify-content: center;
+    align-items:center;
+    width:100px;
+}
+button{
+    flex:0 0 100px;
+    height: 100px;
+    width:100px;
+    transition:1s;
+}
+
+.selected{
+    scale:1.1;
+    border-width:3px;
+}
+.content{
+    display:flex;
+    flex-direction:row;
+}
+body {
+    display:flex;
+    flex-direction: column;
+}
