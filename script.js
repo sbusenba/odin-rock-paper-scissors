@@ -26,20 +26,24 @@ function roundOfRPS(playerSelection, computerSelection){
             return "Tie! Rock Vs Rock!"
         }
         if (computerSelection ==='paper') {
+            defeat()
             return "You lose! Paper covers Rock!"
         }
         if (computerSelection ==='scissors') {
+            victory()
             return "You win! Rock smashes Scissors!"
         }
     }
     if (playerSelection === 'paper'){
         if (computerSelection ==='rock') {
-            return "You win! Paper covers Rock!!"
+            victory()
+            return "You win! Paper covers Rock!!" 
         }
         if (computerSelection ==='paper') {
             return "Tie! Paper Vs Paper!"
         }
         if (computerSelection ==='scissors') {
+            defeat()
             return "You lose! Scissors cut Paper!"
         }
 
@@ -47,9 +51,11 @@ function roundOfRPS(playerSelection, computerSelection){
     }
     if (playerSelection === 'scissors'){
         if (computerSelection ==='rock') {
+            defeat()
             return "You lose! Rock smashes Scissors!"
         }
         if (computerSelection ==='paper') {
+            victory()
             return "You win! Scissors cut Paper!"
         }
         if (computerSelection ==='scissors') {
@@ -67,13 +73,25 @@ function game(playerChoice){
 function playerChose(e){
     this.classList.add('selected')  
     game(this.getAttribute('data-value'))
-    
 }
+function defeat(){
+    computerScore++
+    document.querySelector('.computerScore').innerText = computerScore  
+}
+function victory(){
+    playerScore++
+    document.querySelector('.playerScore').innerText = playerScore
+}
+
+
 function removeTransform(e){
 this.classList.remove('selected')
 
 }
-
+let playerScore= 0
+let computerScore = 0
+document.querySelector('.playerScore').innerText = playerScore
+document.querySelector('.computerScore').innerText = computerScore
 let playerButtons = document.querySelectorAll('.playerButton')
 let buttons = document.querySelectorAll('button')
 playerButtons.forEach(button => button.addEventListener('click',playerChose))

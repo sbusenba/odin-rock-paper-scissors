@@ -1,10 +1,23 @@
 .choices{
     display:flex;
     flex-direction:column;
-    flex:1;
+    flex:0 0 100px;
     justify-content: center;
     align-items:center;
     width:100px;
+}
+.message{
+    text-align: center;
+}
+.centerDisplay
+{
+    margin:10px 20px;
+    flex:1 0 200px;
+}
+.title{
+    font-size:36px;
+
+    justify-self:center;
 }
 button{
     flex:0 0 100px;
@@ -20,8 +33,17 @@ button{
 .content{
     display:flex;
     flex-direction:row;
+    Justify-content:space-between;
 }
 body {
     display:flex;
     flex-direction: column;
+}
+.scoreBoard{
+    min-width:200px;
+    display:flex;
+    justify-content: space-around;
+}
+*{
+    border:2px solid black;
 }
