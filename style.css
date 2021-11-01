@@ -5,6 +5,7 @@
     justify-content: center;
     align-items:center;
     width:100px;
+    gap:10px;
 }
 .message{
     text-align: center;
@@ -13,11 +14,31 @@
 {
     margin:10px 20px;
     flex:1 0 200px;
+    display:flex;
+    flex-direction: column;
+    
+}
+.scoreBoard{
+    border:2px solid black;
+}
+.centerTop{
+    align-self: flex-start;
+    flex:0;
+}
+.toast
+{
+    flex:1;
+    text-align:center;
+    font-size:32px;
+    transition:1s;
+    
+}
+.toasting{
+    scale:1.2;
 }
 .title{
     font-size:36px;
-
-    justify-self:center;
+    text-align: center;
 }
 button{
     flex:0 0 100px;
@@ -29,6 +50,7 @@ button{
 .selected{
     scale:1.1;
     border-width:3px;
+    background-color:darkslategray;
 }
 .content{
     display:flex;
@@ -39,11 +61,9 @@ body {
     display:flex;
     flex-direction: column;
 }
-.scoreBoard{
+.scores{
     min-width:200px;
     display:flex;
     justify-content: space-around;
-}
-*{
-    border:2px solid black;
+    
 }
