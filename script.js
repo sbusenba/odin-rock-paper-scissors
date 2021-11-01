@@ -70,7 +70,24 @@ function game(playerChoice){
     console.log(playerChoice)
     let computerChoice = computerPlay()
     let outcome = roundOfRPS(playerChoice , computerChoice)
-    return outcome;
+    if ((playerScore<5) && (computerScore<5)){
+        return outcome;
+    } else if (playerScore>=5){
+        playerScore = 0
+        computerScore = 0
+        playerScoreboard.innerText = playerScore
+        computerScoreboard.innerText = computerScore
+        return "Player Wins!"
+    }else if (computerScore>=5){
+        playerScore = 0
+        computerScore = 0
+        computerScoreboard.innerText = computerScore 
+        playerScoreboard.innerText = playerScore
+        return "Computer Wins!"
+    }
+
+
+
 }
 function playerChose(e){
     this.classList.add('selected')  
@@ -78,11 +95,12 @@ function playerChose(e){
 }
 function defeat(){
     computerScore++
-    document.querySelector('.computerScore').innerText = computerScore 
+    computerScoreboard.innerText = computerScore 
 }
 function victory(){
     playerScore++
-    document.querySelector('.playerScore').innerText = playerScore
+    playerScoreboard.innerText = playerScore
+    
 }
 function tie(){
     toast.innerText="Tie!"
@@ -95,6 +113,8 @@ this.classList.remove('selected')
 let playerScore= 0
 let computerScore = 0
 let toast = document.querySelector('.toast')
+playerScoreboard = document.querySelector('.playerScore')
+computerScoreboard = document.querySelector('.computerScore')
 document.querySelector('.playerScore').innerText = playerScore
 document.querySelector('.computerScore').innerText = computerScore
 let playerButtons = document.querySelectorAll('.playerButton')
