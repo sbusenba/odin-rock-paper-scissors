@@ -48,8 +48,6 @@ function roundOfRPS(playerSelection, computerSelection){
             defeat()
             return "You lose! Scissors cut Paper!"
         }
-
-
     }
     if (playerSelection === 'scissors'){
         if (computerSelection ==='rock') {
@@ -73,21 +71,20 @@ function game(playerChoice){
     if ((playerScore<5) && (computerScore<5)){
         return outcome;
     } else if (playerScore>=5){
+        alert(`you Won! ${playerScore} to ${computerScore}`)
         playerScore = 0
         computerScore = 0
         playerScoreboard.innerText = playerScore
         computerScoreboard.innerText = computerScore
         return "Player Wins!"
     }else if (computerScore>=5){
+        alert(`you Lost! ${computerScore} to ${playerScore}`)
         playerScore = 0
         computerScore = 0
         computerScoreboard.innerText = computerScore 
         playerScoreboard.innerText = playerScore
         return "Computer Wins!"
     }
-
-
-
 }
 function playerChose(e){
     this.classList.add('selected')  
