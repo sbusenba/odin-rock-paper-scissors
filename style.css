@@ -16,7 +16,7 @@
     flex:1 0 200px;
     display:flex;
     flex-direction: column;
-    
+    max-width: 500px;
 }
 .scoreBoard{
     border:2px solid black;
@@ -31,7 +31,8 @@
     text-align:center;
     font-size:32px;
     transition:1s;
-    
+    animation: toast;
+    animation-duration: 0.3s;
 }
 .toasting{
     scale:1.2;
@@ -55,7 +56,7 @@ button{
 .content{
     display:flex;
     flex-direction:row;
-    Justify-content:space-between;
+    Justify-content:center;
 }
 body {
     display:flex;
@@ -65,5 +66,17 @@ body {
     min-width:200px;
     display:flex;
     justify-content: space-around;
+    
+}
+@keyframes toast {
+from {
+    font-weight: 100;
+}
+50% {
+    font-weight:600;
+}
+to {
+    font-weight:400;
+}
     
 }
