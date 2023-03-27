@@ -28,12 +28,18 @@
 .toast
 {
     flex:1;
-    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     font-size:32px;
     transition:1s;
-    animation: toast;
-    animation-duration: 0.3s;
+    margin:1rem;
 }
+.toast-anim {
+    animation: toast;
+    animation-duration: 0.5s;
+}
+ 
 .toasting{
     scale:1.2;
 }
@@ -71,12 +77,15 @@ body {
 @keyframes toast {
 from {
     font-weight: 100;
+    scale:1;
 }
 50% {
-    font-weight:600;
+    font-weight:400;
+    scale:1.1;
 }
 to {
-    font-weight:400;
+    font-weight:100;
+    scale:1;
 }
     
 }

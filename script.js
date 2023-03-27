@@ -89,6 +89,7 @@ function game(playerChoice){
 function playerChose(e){
     this.classList.add('selected')  
     toast.innerText=game(this.getAttribute('data-value'))
+    toast.classList.add('toast-anim')
 }
 function defeat(){
     computerScore++
@@ -101,15 +102,22 @@ function victory(){
 }
 function tie(){
     toast.innerText="Tie!"
+    toast.classList.add('toast-anim')
 }
 
 function removeTransform(e){
 this.classList.remove('selected')
 
 }
+function removeAnimation(e){
+    this.classList.remove('toast-anim')
+}
+
+
 let playerScore= 0
 let computerScore = 0
 let toast = document.querySelector('.toast')
+toast.addEventListener('animationend',removeAnimation)
 playerScoreboard = document.querySelector('.playerScore')
 computerScoreboard = document.querySelector('.computerScore')
 document.querySelector('.playerScore').innerText = playerScore
