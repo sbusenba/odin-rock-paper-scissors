@@ -1,91 +1,87 @@
-.choices{
-    display:flex;
-    flex-direction:column;
-    flex:0 0 100px;
-    justify-content: center;
-    align-items:center;
-    width:100px;
-    gap:10px;
+.choices {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  gap: 10px;
 }
-.message{
-    text-align: center;
+.message {
+  text-align: center;
 }
-.centerDisplay
-{
-    margin:10px 20px;
-    flex:1 0 200px;
-    display:flex;
-    flex-direction: column;
-    max-width: 500px;
+.centerDisplay {
+  margin: 10px 20px;
+  flex: 1 0 200px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
 }
-.scoreBoard{
-    border:2px solid black;
+.scoreBoard {
+  border: 2px solid black;
 }
-.centerTop{
-    align-self: flex-start;
-    flex:0;
+.centerTop {
+  align-self: flex-start;
+  flex: 0;
 }
-.toast
-{
-    flex:1;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size:32px;
-    transition:1s;
-    margin:1rem;
+.toast {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  transition: 1s;
+  margin: 1rem;
 }
 .toast-anim {
-    animation: toast;
-    animation-duration: 0.5s;
-}
- 
-.toasting{
-    scale:1.2;
-}
-.title{
-    font-size:36px;
-    text-align: center;
-}
-button{
-    flex:0 0 100px;
-    height: 100px;
-    width:100px;
-    transition:1s;
+  animation: toast;
+  animation-duration: 0.5s;
 }
 
-.selected{
-    scale:1.1;
-    border-width:3px;
-    background-color:darkslategray;
+.toasting {
+  scale: 1.2;
 }
-.content{
-    display:flex;
-    flex-direction:row;
-    Justify-content:center;
+.title {
+  font-size: 36px;
+  text-align: center;
+}
+button {
+  flex: 0 0 100px;
+  height: 120px;
+  width: 120px;
+  transition: 1s;
+}
+
+.selected {
+  scale: 1.1;
+  border-width: 3px;
+  background-color: darkslategray;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 body {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.scores{
-    min-width:200px;
-    display:flex;
-    justify-content: space-around;
-    
+.scores {
+  min-width: 200px;
+  display: flex;
+  justify-content: space-around;
 }
 @keyframes toast {
-from {
+  from {
     font-weight: 100;
-    scale:1;
-}
-50% {
-    font-weight:400;
-    scale:1.1;
-}
-to {
-    font-weight:100;
-    scale:1;
-}
-    
+    scale: 1;
+  }
+  50% {
+    font-weight: 400;
+    scale: 1.1;
+  }
+  to {
+    font-weight: 100;
+    scale: 1;
+  }
 }
