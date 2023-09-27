@@ -7,7 +7,7 @@
    viewBox="0 0 26.458333 26.458333"
    version="1.1"
    id="svg5"
-   sodipodi:docname="scissors"
+   sodipodi:docname="scissors.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,7 +25,7 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="7.88"
-     inkscape:cx="71.954315"
+     inkscape:cx="70.050761"
      inkscape:cy="48.286802"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
@@ -41,23 +41,23 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:5.64444px;white-space:pre;inline-size:24.9084;fill:#000000;stroke-width:0;stroke:#ffffff;stroke-dasharray:none"
+       style="font-size:5.64444px;white-space:pre;inline-size:24.9084;display:inline;fill:#000000;stroke:#ffffff;stroke-width:0;stroke-dasharray:none"
        x="1.3862137"
        y="8.8088646"
        id="text2537"
        transform="translate(0.29248336,-2.4655167)"><tspan
          x="1.3862137"
          y="8.8088646"
-         id="tspan3187">Scissors</tspan></text>
+         id="tspan906">Scissors</tspan></text>
     <path
        style="fill:#4d4d4d;stroke:#999999;stroke-width:0;stroke-dasharray:none"
-       d="M 7.9331195,14.019265 C 8.4636555,13.737668 22.59611,17.785218 22.59611,17.785218 L 20.652866,19.217206 7.9255125,15.374788 Z"
+       d="m 9.2310636,14.569475 c 0.530536,-0.281597 14.6629904,3.765953 14.6629904,3.765953 L 21.95081,19.767416 9.2234566,15.924998 Z"
        id="path2919" />
     <ellipse
-       style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:1.32292;stroke-dasharray:none"
        id="path2745"
-       cx="6.8328958"
-       cy="15.056466"
+       cx="5.9570193"
+       cy="14.784312"
        rx="3.5821342"
        ry="3.5627882" />
     <path
@@ -66,31 +66,17 @@
        id="path2917" />
     <ellipse
        style="fill:#ffffff;stroke:none;stroke-width:0;stroke-dasharray:none"
-       id="path3136"
-       cx="6.8062062"
-       cy="14.961967"
-       rx="2.6874368"
-       ry="2.7133408" />
-    <ellipse
-       style="fill:#ffffff;stroke:none;stroke-width:0;stroke-dasharray:none"
        id="path3138"
        cx="12.884089"
        cy="16.065664"
        rx="0.42574033"
        ry="0.39432788" />
     <ellipse
-       style="fill:#000000;stroke:#ffffff;stroke-width:0;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:1.32292;stroke-dasharray:none"
        id="path2747"
-       cx="13.084105"
-       cy="21.434637"
+       cx="13.279268"
+       cy="21.976978"
        rx="3.6198421"
        ry="3.474453" />
-    <ellipse
-       style="fill:#ffffff;stroke:none;stroke-width:0;stroke-dasharray:none"
-       id="path3134"
-       cx="13.074531"
-       cy="21.607241"
-       rx="2.4345632"
-       ry="2.4739764" />
   </g>
 </svg>
